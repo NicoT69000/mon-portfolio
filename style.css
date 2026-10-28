@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+}
+
+header {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eaeaea;
+}
+
+.photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #2c3e50;
+}
+
+.info h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.location {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 1.25rem;
+    color: #2980b9;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #e74c3c;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.accroche {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.linkedin {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0077b5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.linkedin:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin: 30px 0 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #3498db;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+.timeline .experience {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.timeline .experience h3 {
+    color: #2c3e50;
+    font-size: 1.15rem;
+    margin-bottom: 4px;
+}
+
+.periode {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 3px;
+}
+
+.poste {
+    font-weight: 600;
+    color: #2980b9;
+    margin-bottom: 3px;
+}
+
+.lieu {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.toggle-details {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.toggle-details:hover {
+    background: #2980b9;
+}
+
+.details {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #e0e0e0;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.details ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.details li {
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.video-container {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f1f8ff;
+    border-radius: 8px;
+    border: 1px solid #d1e7ff;
+}
+
+.video-container h3 {
+    margin-bottom: 10px;
+    color: #2980b9;
+    font-size: 1.1rem;
+}
+
+.video-container video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    background: #000;
+}
+
+.video-note {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #ecf0f1;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+ul li {
+    margin-bottom: 6px;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eaeaea;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .accroche, .title, h1, h2 {
+        text-align: center;
+    }
+
+    .linkedin {
+        text-align: center;
+    }
+}
