@@ -105,39 +105,50 @@ p {
     border-left: 4px solid #3498db;
 }
 
-.timeline .experience h3 {
-    color: #2c3e50;
-    font-size: 1.15rem;
-    margin-bottom: 4px;
+.entreprise {
     display: flex;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #5d6d7e;
+    margin-bottom: 2px;
+}
+
+.entreprise .logo {
+    max-height: 26px;
+    max-width: 150px;
+}
+
+/* Le fichier Quebecor a un fond blanc opaque : on le fond dans la carte. */
+.entreprise img[src$="quebecor.png"] {
+    mix-blend-mode: multiply;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.logo-group .logo {
+    max-height: 24px;
+    max-width: 90px;
+}
+
+.companies {
+    font-size: 0.85rem;
 }
 
 .logo {
     height: auto;
-    max-height: 38px;
     width: auto;
-    max-width: 200px;
+    max-height: 38px;
+    max-width: 160px;
     object-fit: contain;
     flex: 0 0 auto;
-}
-
-.logos {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin: 8px 0 12px;
-}
-
-.logos img {
-    height: auto;
-    max-height: 34px;
-    width: auto;
-    max-width: 130px;
-    object-fit: contain;
 }
 
 .formations-list li {
@@ -153,15 +164,16 @@ p {
 }
 
 .periode {
-    font-size: 0.9rem;
-    color: #7f8c8d;
-    margin-bottom: 3px;
+    font-size: 0.82rem;
+    color: #95a5a6;
+    margin-bottom: 8px;
 }
 
-.poste {
-    font-weight: 600;
+.fonction {
     color: #2980b9;
-    margin-bottom: 3px;
+    font-size: 1.32rem;
+    line-height: 1.25;
+    margin: 0 0 5px;
 }
 
 .lieu {
