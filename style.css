@@ -23,6 +23,12 @@ header {
     border-bottom: 2px solid #eaeaea;
 }
 
+.profile {
+    display: flex;
+    gap: 22px;
+    align-items: flex-start;
+}
+
 .photo {
     width: 120px;
     height: 120px;
@@ -103,6 +109,45 @@ p {
     color: #2c3e50;
     font-size: 1.15rem;
     margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 32px;
+    width: auto;
+    max-width: 160px;
+    object-fit: contain;
+    flex: 0 0 auto;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin: 8px 0 12px;
+}
+
+.logos img {
+    height: 26px;
+    width: auto;
+    max-width: 140px;
+    object-fit: contain;
+}
+
+.formations-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.formations-list .logo {
+    height: 36px;
+    max-width: 130px;
 }
 
 .periode {
@@ -227,9 +272,29 @@ footer {
         text-align: center;
     }
 
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
     .photo {
         width: 100px;
         height: 100px;
+    }
+
+    .logo {
+        height: 26px;
+        max-width: 110px;
+    }
+
+    .formations-list .logo {
+        height: 28px;
+        max-width: 95px;
+    }
+
+    .formations-list li {
+        align-items: flex-start;
     }
 
     .accroche, .title, h1, h2 {
