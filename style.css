@@ -116,9 +116,10 @@ p {
 }
 
 .logo {
-    height: 32px;
+    height: auto;
+    max-height: 38px;
     width: auto;
-    max-width: 160px;
+    max-width: 200px;
     object-fit: contain;
     flex: 0 0 auto;
 }
@@ -132,9 +133,10 @@ p {
 }
 
 .logos img {
-    height: 26px;
+    height: auto;
+    max-height: 34px;
     width: auto;
-    max-width: 140px;
+    max-width: 130px;
     object-fit: contain;
 }
 
@@ -146,8 +148,8 @@ p {
 }
 
 .formations-list .logo {
-    height: 36px;
-    max-width: 130px;
+    max-height: 38px;
+    max-width: 150px;
 }
 
 .periode {
