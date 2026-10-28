@@ -69,6 +69,15 @@ header {
     margin-bottom: 10px;
 }
 
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .linkedin {
     display: inline-block;
     margin-top: 10px;
@@ -272,11 +281,51 @@ ul li {
 
 footer {
     margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #eaeaea;
-    font-size: 0.85rem;
-    color: #7f8c8d;
+    padding: 22px 24px;
+    background: #2c3e50;
+    border-radius: 8px;
+    color: #ecf0f1;
     text-align: center;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin-bottom: 2px;
+}
+
+.footer-name {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.footer-role {
+    color: #bdc3c7;
+    font-size: 0.85rem;
+}
+
+.footer-meta {
+    color: #95a5a6;
+    font-size: 0.8rem;
+}
+
+.footer-contact {
+    margin: 8px 0 10px;
+}
+
+footer a {
+    color: #85c1e9;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-note {
+    font-size: 0.72rem;
+    color: #7f8c8d;
+    margin-bottom: 0;
 }
 
 @media (max-width: 600px) {
